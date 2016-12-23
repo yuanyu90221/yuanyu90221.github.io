@@ -1,10 +1,576 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>first github io page</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>json</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
 	</head>
 	<body>
-		<h1>Hi! my name is yuanyu!</h1>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						json
+					</h1>
+					<h2>
+						Web developer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">yuanyu90221@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">0979079431</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href="https://github.com/yuanyu90221">https://github.com/yuanyu90221</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Json Liang graduated from NCTU with master degree in Computer Science, study for Image Preprocesing with OpenCV library. First year after graduation, worked as firmware engineer at ASUS. However, with great interest with Web development, I applied another job on web development at SYSCOM. With many web develop technque improve, the web develop need to integrate with both frontend and backend. Use nodejs , I could maintain both end with only one language ,namely javascript. I would like create some fantastic app with a team to make the world more colorful and help people work effeciently. Thus, I am struggle to cultivating my ability to become a fullstack worker.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Gmail
+					</strong>
+					<div class="username">
+							yuanyu90221
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://github.com/yuanyu90221">yuanyu90221</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Trello
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://trello.com/liangyuanyu">liangyuanyu</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Linkedin
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://www.linkedin.com/in/json-liang-60278b2b?trk=nav_responsive_tab_profile_pic">jsonLiang</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Gorilla Tech</span>
+					<span class="date">
+						2016-07-25 — 2016-12-23
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.gorilla-technology.com/zh-TW">https://www.gorilla-technology.com/zh-TW</a>
+				</div>
+				<div class="position">
+					Web developer
+				</div>
+				<div class="summary">
+					<p>A web developer to maintain and revised original system.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Reconstruct a website based on Java Spring framework with SPA from a previous broken website</li>
+					<li class="bullet">Integrate two express server which two seperately use Reactjs, EJS view engine as frontend framework, by express route</li>
+					<li class="bullet">Optimized data access logic by pagenation design for tons of data, and limit to query number at once</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>SYSCOM Tech</span>
+					<span class="date">
+						2016-04-08 — 2015-04-07
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.syscom.com.tw/">https://www.syscom.com.tw/</a>
+				</div>
+				<div class="position">
+					Web developer
+				</div>
+				<div class="summary">
+					<p>A web developer to developer Ecommerce system with Java as backend</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Construct a Ecommerce system with Bootstrap CSS and JQuery library, backend with Java servelet</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>ASUS</span>
+					<span class="date">
+						2016-04-08 — 2015-04-07
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.asus.com/tw/">https://www.asus.com/tw/</a>
+				</div>
+				<div class="position">
+					Firmware Engineer
+				</div>
+				<div class="summary">
+					<p>Porting function code on motherboard, somethings work on BSP, mainly UEFI</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Porting function code on motherboard</li>
+					<li class="bullet">Learning the Concept of version control on git</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>National Chung Tung University</span>
+					<span class="date">
+						2010-09-01 — 2012-09-01
+					</span>
+				</h4>
+				<div class="area">
+					Image Preprocesing
+				</div>
+				<div class="studyType">
+					Graduate
+				</div>
+				<h4>Courses</h4>
+				<ul class="courses">
+					<li>Algorithm - Introudction of Time Complexity and Space Complexity evaluation</li>
+					<li>Ecommerce - Introduction how to utilize EJB in commerce system</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>National Chung Hsing University</span>
+					<span class="date">
+						2006-09-01 — 2010-06-01
+					</span>
+				</h4>
+				<div class="area">
+					Applied Mathematic
+				</div>
+				<div class="studyType">
+					Bachelor
+				</div>
+				<h4>Courses</h4>
+				<ul class="courses">
+					<li>Database Theory - Basic SQL and DB Normalization</li>
+					<li>Object Oriented Programming - OOP with Java</li>
+					<li>Programming thinking - Basic Coding in C++</li>
+					<li>Open Source - Introudction of open source and linux distribution Ubuntu, Concept of Unix file system</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="awards" class="row">
+		<aside class="col-sm-3">
+			<h3>Awards</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Digital Compression Pioneer Award</span>
+				</h4>
+				<div class="date pull-right">
+					<em>Awarded</em>
+					2014-11-01
+				</div>
+				<div class="awarder">
+					<em>by</em>
+					<strong>Techcrunch</strong>
+				</div>
+				<div class="summary">
+					There is no spoon.
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="publications" class="row">
+		<aside class="col-sm-3">
+			<h3>Publications</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Detection of Imagery Symmetry due to Optical Reflection</span>
+					<span class="date">
+						2012-09-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://ir.nctu.edu.tw/bitstream/11536/50449/1/553301.pdf"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>yuanyuliang</strong>
+				</div>
+				<div class="summary">
+					<p>Algorithm to detect Imagery Symmetry due to Optical Reflection by image gradient</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Web Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Backend</h4>
+				</div>
+				<ul class="keywords">
+					<li>Java</li>
+					<li>nodejs</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Vesrion Control</h4>
+				</div>
+				<ul class="keywords">
+					<li>Git</li>
+					<li>SVN</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Mandarin Chinese</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Simple Commmunication
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Taiwanese</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Sports</h4>
+				</div>
+				<ul class="keywords">
+					<li>Table Tennis</li>
+					<li>Badminton</li>
+					<li>Volley Ball</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Swimming</h4>
+				</div>
+				<ul class="keywords">
+					<li>Breaststroke</li>
+					<li>freeStyle</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+
+	</div>
+	
 	</body>
 </html>
