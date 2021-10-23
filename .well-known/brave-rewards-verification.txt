@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: yuanyu90221.github.io
+Token: df89d83f442e2d247b9be7c80545f8a1eec9d79dfe4f9bece59bc842a83179bb
